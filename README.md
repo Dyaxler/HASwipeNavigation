@@ -12,11 +12,11 @@ NOTE: This file requires editing before you upload it into Home Assistant. Pleas
 
 There are several other tweaks you can make beginning with line 57 (example: minSwipeDistance). The code comments are straight forward as to what these do specifically. I honestly don't see a need to mess with these settings unless you have an old touch device that's a little slow. These settings work perfectly on Raspberry PI Touch Screens or third-party screens that work with PI.
 
-1. Download the `HASwipeNavigation.js` script and place it into a new: `www/HASwipeNavigation` folder of your Home Assistant installation. (Edit file first - see note above.)
+1. Download the `HASwipeNavigation.js` script and place it into a new: `www/HASwipeNavigation` folder of your Home Assistant installation. (Edit file first - see note above.) OPTIONAL: It's not neccessary to create a subfolder named `HASwipeNavigation` - you can just upload it into the `www` directory. Just make sure you're using the correct path in Step #3.
 
 2. In Home Assistant, navigate to `Settings` > `Dashboards`, open the three-dots menu and select `resources`; alternatively, point your browser to `/config/lovelace/resources`.
 
-3. Add a new resource as a _javascript module_ pointing to the `/local/HASlideshow/HASwipeNavigation.js` URL.
+3. Add a new resource as a _javascript module_ pointing to the `/local/HASwipeNavigation/HASwipeNavigation.js` URL. OPTIONAL: `/local/HASwipeNavigation.js` see note in Step #1.
    
 4. This normally works for me short of rebooting Home Assistant, go to Developer Tools --> YAML and reload `All YAML configuration`.
 
