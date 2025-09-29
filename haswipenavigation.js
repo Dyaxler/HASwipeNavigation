@@ -83,7 +83,7 @@ console.log('Module imported: haswipenavigation.js loaded');  // Runs first, con
     // You can add as many tabs as you want to. You just have to update
     // the above logic to match each step in the navigation chain.
 
-console.log('Next path:', nextPath);
+  console.log('Next path:', nextPath);
     if (nextPath) {
       console.log('Performing navigation to:', nextPath);
       history.pushState(null, null, nextPath + window.location.search);
